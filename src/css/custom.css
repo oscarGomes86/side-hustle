@@ -1,0 +1,207 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-first websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #00B2D6;
+  --ifm-color-primary-dark: #00A0C1;
+  --ifm-color-primary-darker: #008FAD;
+  --ifm-color-primary-darkest: #007E99;
+  --ifm-color-primary-light: #00C4EA;
+  --ifm-color-primary-lighter: #00D5FF;
+  --ifm-color-primary-lightest: #1ADDFF;
+  
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  /* Custom brand colors */
+  --brand-navy: #1A1B41;
+  --brand-cyan: #00B2D6;
+  --brand-light: #FFFFFF;
+  --brand-gray: #F5F6F7;
+
+  /* Background colors */
+  --ifm-background-color: #ffffff;
+  --ifm-background-surface-color: var(--brand-gray);
+  
+  /* Card colors */
+  --card-background: #ffffff;
+  --card-border-color: rgba(0, 0, 0, 0.1);
+
+  /* Text colors */
+  --text-color: var(--brand-navy);
+  --text-color-secondary: #4A4B66;
+
+  /* Transition */
+  --color-transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode */
+[data-theme='dark'] {
+  --ifm-color-primary: #00B2D6;
+  --ifm-color-primary-dark: #00A0C1;
+  --ifm-color-primary-darker: #008FAD;
+  --ifm-color-primary-darkest: #007E99;
+  --ifm-color-primary-light: #00C4EA;
+  --ifm-color-primary-lighter: #00D5FF;
+  --ifm-color-primary-lightest: #1ADDFF;
+  
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+
+  /* Custom brand colors in dark mode */
+  --brand-navy: #FFFFFF;
+  --brand-cyan: #00B2D6;
+  --brand-light: #1A1B41;
+  --brand-gray: #242526;
+
+  /* Background colors */
+  --ifm-background-color: #1A1B41;
+  --ifm-background-surface-color: #242526;
+
+  /* Card colors */
+  --card-background: #242526;
+  --card-border-color: rgba(255, 255, 255, 0.1);
+
+  /* Text colors */
+  --text-color: #f5f6f7;
+  --text-color-secondary: #dadde1;
+}
+
+/* Global styles */
+body {
+  transition: var(--color-transition);
+}
+
+/* Modern styling improvements */
+.navbar {
+  background-color: var(--brand-navy);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  transition: var(--color-transition);
+}
+
+.navbar__title,
+.navbar__link {
+  color: var(--brand-light);
+}
+
+.navbar__link:hover {
+  color: var(--brand-cyan);
+}
+
+[data-theme='dark'] .navbar {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.footer {
+  background: var(--brand-navy);
+  color: var(--brand-light);
+}
+
+[data-theme='dark'] .footer {
+  background: #000000;
+}
+
+/* Typography */
+.markdown h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+}
+
+.markdown h2 {
+  font-size: 2rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.markdown h3 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  color: var(--text-color);
+}
+
+.markdown p {
+  color: var(--text-color-secondary);
+}
+
+/* Card-like styling for documentation */
+.theme-doc-markdown {
+  background: var(--card-background);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border: 1px solid var(--card-border-color);
+  transition: var(--color-transition);
+}
+
+[data-theme='dark'] .theme-doc-markdown {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Code blocks */
+.prism-code {
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+
+/* Tables */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 1rem 0;
+}
+
+[data-theme='dark'] table {
+  border: 1px solid var(--card-border-color);
+}
+
+/* Buttons and interactive elements */
+.button {
+  transition: all 0.3s ease;
+}
+
+.button--primary {
+  background: var(--brand-cyan);
+  border: none;
+  color: white;
+}
+
+.button--primary:hover {
+  background: var(--ifm-color-primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 178, 214, 0.3);
+}
+
+/* Navigation items */
+.menu__link {
+  transition: var(--color-transition);
+}
+
+.menu__link:hover {
+  background-color: var(--brand-cyan);
+  opacity: 0.8;
+  color: white;
+}
+
+[data-theme='dark'] .menu__link:hover {
+  background-color: var(--brand-cyan);
+}
+
+/* Hero section */
+.hero {
+  background: var(--brand-navy);
+  color: var(--brand-light);
+}
+
+.hero__subtitle {
+  color: var(--brand-cyan);
+}
