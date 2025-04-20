@@ -13,14 +13,15 @@ const config: Config = {
   url: 'https://oscargomes86.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/nextmove/',
+  baseUrl: '/side-hustle/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'oscarGomes86', // Usually your GitHub org/user name.
-  projectName: 'nextmove', // Usually your repo name.
+  projectName: 'side-hustle', // Usually your repo name.
+  trailingSlash: false,
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set

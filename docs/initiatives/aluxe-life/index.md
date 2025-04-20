@@ -77,7 +77,7 @@ To create a lifestyle brand that embodies:
 
 ## Resources
 
-- [Brand Guidelines](./brand-guidelines)
-- [Content Strategy](./content-strategy)
-- [Marketing Plan](./marketing-plan)
-- [Product Development](./product-development) 
+- [Brand Guidelines](brand-guidelines)
+- [Content Strategy](content-strategy)
+- [Marketing Plan](marketing-plan)
+- [Product Development](product-development) 
